@@ -10,6 +10,7 @@ namespace sansusan\easyui;
 
 use Yii;
 use yii\web\AssetBundle;
+use yii\web\View;
 
 class EasyuiAsset extends AssetBundle
 {
@@ -23,7 +24,8 @@ class EasyuiAsset extends AssetBundle
         'jquery.easyui.min.js',
     ];
     public $depends = [
-        'yii\web\YiiAsset'
+        // 'yii\web\YiiAsset',
+        'yii\web\JqueryAsset',
     ];
 
     /**
