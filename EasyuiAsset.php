@@ -62,7 +62,7 @@ class EasyuiAsset extends AssetBundle
             $theme = self::$theme;
         else
             $theme = 'default';
-        array_unshift$this->css, strtr('themes/{theme}/easyui.css', ['{theme}' => $theme]));
+        array_unshift($this->css, strtr('themes/{theme}/easyui.css', ['{theme}' => $theme]));
     }
 
 
