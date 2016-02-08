@@ -15,7 +15,7 @@ use yii\web\View;
 class EasyuiAsset extends AssetBundle
 {
 
-    public $sourcePath = '@sansusan/easyui/assets/jquery-easyui-1.4.2';
+    public $sourcePath = '@sansusan/easyui/assets/jquery-easyui-1.4.4';
     public $css = [
         'themes/icon.css',
         'themes/color.css'
@@ -116,6 +116,13 @@ class EasyuiAsset extends AssetBundle
                     case 'easyui-rtl':
                         $folder = 'jquery-easyui-rtl';
                         break;
+					case 'columns-ext':
+                        $folder = 'columns-ext';
+                        break;
+					case 'datagrid-cellediting':
+                        $folder = 'datagrid-celleditingt';
+                        break;
+										
                 }
                 if (!empty($folder))
                     array_push($this->js, strtr('extensions/{folder}/{ex}.js', ['{folder}' => $folder, '{ex}' => $ex]));
